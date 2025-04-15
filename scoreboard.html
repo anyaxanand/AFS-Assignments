@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Scoreboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🏏 Cricket Live</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scoreboard.html">Scoreboard</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Live Scoreboard</h1>
+    
+    <div class="teams">
+      <div class="team" id="team1">
+        <h2>Team 1</h2>
+        <p>Runs: <span id="runs1">0</span></p>
+        <p>Wickets: <span id="wickets1">0</span></p>
+        <p>Balls: <span id="balls1">0</span></p>
+      </div>
+
+      <div class="team" id="team2">
+        <h2>Team 2</h2>
+        <p>Runs: <span id="runs2">0</span></p>
+        <p>Wickets: <span id="wickets2">0</span></p>
+        <p>Balls: <span id="balls2">0</span></p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <h3>Update Score</h3>
+      <select id="teamSelect">
+        <option value="1">Team 1</option>
+        <option value="2">Team 2</option>
+      </select>
+
+      <button onclick="addRun(1)">+1 Run</button>
+      <button onclick="addRun(4)">+4</button>
+      <button onclick="addRun(6)">+6</button>
+      <button onclick="addBall()">Ball</button>
+      <button onclick="addWide()">Wide</button>
+      <button onclick="addNoBall()">No Ball</button>
+      <button onclick="addWicket()">Wicket</button>
+      <button onclick="resetGame()">Reset</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Anya's Cricket App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
